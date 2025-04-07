@@ -84,3 +84,12 @@ student.addCourse('Physical Anthropology');
 console.log("Part 5 - addCourse Method");
 console.log(student.courses);
 console.log("----------------------------------");
+
+student.numOfCourses = function() {
+    let totalCourses = student.courses.length;
+    return totalCourses;
+}
+
+console.log("Part 5 - numOfCourses Method");
+console.log(student.numOfCourses());
+console.log("----------------------------------");
