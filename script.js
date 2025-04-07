@@ -4,7 +4,7 @@ let student = {
     name: "Nour Harrak",
     age: 28,
     isEnrolled: true,
-    courses: ['JavaScript Fundamentals', 'Web Programming and Design', 'Operating Systems', 'Algorithms and Problem Solving', 'Database Programming', 'Technical Workplace Writing Skills'],
+    courses: ['JavaScript Fundamentals', 'Web Programming and Design', 'Operating Systems', 'Algorithms and Problem Solving', 'Database Concepts and Design', 'Technical Workplace Writing Skills'],
     details: function() {
         console.log("The Student's Name is: " + this.name);
         console.log("The Student's Name is: " + this.age);
@@ -49,4 +49,26 @@ let [firstScore, secondScore] = scores;
 console.log("Part 3 - Destructure scores Array")
 console.log(firstScore);
 console.log(secondScore);
+console.log("----------------------------------");
+
+//Part 4 - The Spread Operator
+
+let studentCopy = {...student};
+
+console.log("Part 4 - Copy student Object with Spread Operator")
+console.log(studentCopy)
+console.log("----------------------------------");
+
+studentCopy.graduationYear = 2026;
+
+console.log("Part 4 - Add graduationYear Property to Copied student Object");
+console.log(studentCopy.graduationYear);
+console.log("----------------------------------");
+
+let sem2Courses = ['Advanced Front-End Programming', 'An Intro to Arts and Sciences', 'Database Programming', 'Fundamental Numeric Computing', 'Object-Oriented Programming'];
+
+let sem1and2 = [...student.courses, ...sem2Courses];
+
+console.log("Part 4 - Merge 2 Course Arrays");
+console.log(sem1and2);
 console.log("----------------------------------");
