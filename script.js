@@ -32,3 +32,12 @@ let studentUnstring = JSON.parse(studentjsonString);
 console.log("Part 2 - Convert Stringified student Object back to a JavaScript Object")
 console.log(studentUnstring);
 console.log("----------------------------------")
+
+//Part 3 - Using Destructuring Assignment
+
+let {name, courses} = student;
+
+console.log("Part 3 - Destructure student Object (name and courses Properties)")
+console.log(name);
+console.log(courses);
+console.log("----------------------------------")
