@@ -40,4 +40,13 @@ let {name, courses} = student;
 console.log("Part 3 - Destructure student Object (name and courses Properties)")
 console.log(name);
 console.log(courses);
-console.log("----------------------------------")
+console.log("----------------------------------");
+
+let scores = [87, 71, 58, 67, 65];
+
+let [firstScore, secondScore] = scores;
+
+console.log("Part 3 - Destructure scores Array")
+console.log(firstScore);
+console.log(secondScore);
+console.log("----------------------------------");
