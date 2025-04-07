@@ -13,4 +13,7 @@ let student = {
     }
 };
 
+console.log(student.name, student.age);
 student.details();
+
+//Part 2 - Working with JSON
