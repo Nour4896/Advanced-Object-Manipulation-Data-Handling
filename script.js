@@ -72,3 +72,15 @@ let sem1and2 = [...student.courses, ...sem2Courses];
 console.log("Part 4 - Merge 2 Course Arrays");
 console.log(sem1and2);
 console.log("----------------------------------");
+
+//Part 5 - Object Methods
+
+student.addCourse = function(course) {
+    student.courses.push(course);
+}
+
+student.addCourse('Physical Anthropology');
+
+console.log("Part 5 - addCourse Method");
+console.log(student.courses);
+console.log("----------------------------------");
