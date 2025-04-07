@@ -12,8 +12,17 @@ let student = {
         console.log("The Student's is Currently Taking the Following Courses: " + this.courses);
     }
 };
-
+console.log("Part 1 - Name and Age Properties")
 console.log(student.name, student.age);
+console.log("----------------------------------")
+console.log("Part 1 - details() Object Method")
 student.details();
+console.log("----------------------------------")
 
 //Part 2 - Working with JSON
+
+let studentjsonString = JSON.stringify(student);
+
+console.log("Part 2 - Stringify student Object")
+console.log(studentjsonString);
+console.log("----------------------------------")
