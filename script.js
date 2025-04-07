@@ -26,3 +26,9 @@ let studentjsonString = JSON.stringify(student);
 console.log("Part 2 - Stringify student Object")
 console.log(studentjsonString);
 console.log("----------------------------------")
+
+let studentUnstring = JSON.parse(studentjsonString);
+
+console.log("Part 2 - Convert Stringified student Object back to a JavaScript Object")
+console.log(studentUnstring);
+console.log("----------------------------------")
