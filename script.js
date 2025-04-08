@@ -7,7 +7,7 @@ let student = {
     courses: ['JavaScript Fundamentals', 'Web Programming and Design', 'Operating Systems', 'Algorithms and Problem Solving', 'Database Concepts and Design', 'Technical Workplace Writing Skills'],
     details: function() {
         console.log("The Student's Name is: " + this.name);
-        console.log("The Student's Name is: " + this.age);
+        console.log("The Student's Age is: " + this.age);
         console.log("The Student is Enrolled?: " + this.isEnrolled);
         console.log("The Student's is Currently Taking the Following Courses: " + this.courses);
     }
@@ -92,4 +92,21 @@ student.numOfCourses = function() {
 
 console.log("Part 5 - numOfCourses Method");
 console.log(student.numOfCourses());
+console.log("----------------------------------");
+
+//Bonus - Calculate Average with reduce Method
+
+function calculateAverage(arr) {
+    function scoreReducer(accumulator, currentValue) {
+        return accumulator + currentValue;
+    };
+
+    let scoreSum = arr.reduce(scoreReducer);
+    let average = scoreSum / arr.length;
+
+    return average;
+}
+
+console.log("Bonus - Use reduce Method to Calculate Average Score");
+console.log(calculateAverage(scores));
 console.log("----------------------------------");
